@@ -17,9 +17,9 @@ static rom far char *textpointer;
 #endif /* __dingens */
 
 #ifdef __x86_64
-static char *xpicpointer;
-static char *ypicpointer;
-static char *textpointer;
+static unsigned char *xpicpointer;
+static unsigned char *ypicpointer;
+static unsigned char *textpointer;
 #endif /* __x86_64 */
 
 static unsigned char picscale;

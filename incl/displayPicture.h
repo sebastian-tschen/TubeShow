@@ -5,4 +5,4 @@
 
 
 
-void displayPicture(char);
+void displayPicture(char *xpicPointer, char *ypicPointer);

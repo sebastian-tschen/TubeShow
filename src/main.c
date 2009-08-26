@@ -4,6 +4,14 @@
 #include <p18f4520.h>
 #endif /* __dingens */
 
+#ifdef __x86_64
+#include <myp18f4520.h>
+#include <stdio.h>
+#include <stdlib.h>
+#endif /*__x86_64*/
+
+#include <main.h>
+
 #include <charlibrary.h>
 #include <vardef.h>
 //#include <kanallibrary.h>
@@ -16,6 +24,7 @@
 #include <DISPLAYCHAR.h>
 //#include <CHARINIT.h>
 #include <picturelibrary.h>
+#include <displayPicture.h>
 //#include <math.h>
 
 
@@ -105,7 +114,7 @@ void SCHRIFT (void)
   while (vergleichswert  == (PORTC&0b11110000)+(PORTB&0b00001111))
   //for (k=0; k<=10; ++k)
   {
-    DISPLAYCHAR();
+    DISPLAYCHAR(&xarray,&yarray);
   }
 }
 
@@ -145,39 +154,39 @@ void LAUFSCHRIFT (void)
     while (vergleichswert  == (PORTC&0b11110000)+(PORTB&0b00001111))
     //for (k=0; k<=10; ++k)
 	{
-      DISPLAYCHAR();
+      DISPLAYCHAR(&xarray,&yarray);
     }
   }
 }
 
 //********************************************************************************//
 
-void BILD (void)
+void BILD (unsigned char *xpicPointer, unsigned char *ypicPointer)
 {
 
   
-  i=*xpicpointer;
+  int gi=*xpicPointer;
 
-  k=i;
+  k=gi;
 
-  for(j=0; j<i; ++j)
+  for(j=0; j<gi; ++j)
   {
-    ++xpicpointer;
-    ++ypicpointer;
-    xarray[j]=*xpicpointer;
-    yarray[j]=*ypicpointer;
+    ++xpicPointer;
+    ++ypicPointer;
+    xarray[j]=*xpicPointer;
+    yarray[j]=*ypicPointer;
   }
 
-  for (i=k+1; i<=255; ++i)
+  for (gi=k+1; gi<=255; ++gi)
   {
-    xarray[i]=0;
-    yarray[i]=0;
+    xarray[gi]=0;
+    yarray[gi]=0;
   }
 
 
   while(vergleichswert  == (PORTC&0b11110000)+(PORTB&0b00001111))
   {
-     DISPLAYCHAR();
+     DISPLAYCHAR(&xarray,&yarray);
   }
 
 }
@@ -210,7 +219,7 @@ void ANIBILD (void)
 
   for (k=0; k<=anitime; ++k){
     if (vergleichswert  == (PORTC&0b11110000)+(PORTB&0b00001111)){
-       DISPLAYCHAR();
+       DISPLAYCHAR(&xarray,&yarray);
     }
     else{
 // break;
@@ -236,19 +245,19 @@ void OSCI (void)
   	    {
           // for (i=0; i<=oscitemp; ++i)
 	      //{
-	      LDAC();
+	      LDAC(xdaten,ydaten);
 	      // }
 	      ++xdaten;
 	      ++xdaten;
         }
       }
 
-    LDAC();
+    LDAC(xdaten,ydaten);
     --ydaten;
-    LDAC();
+    LDAC(xdaten,ydaten);
     for (j=0; j<=19; ++j)
     {
-      Nop();
+//      Nop(); TODO
     }
 
     ++ydaten;
@@ -305,7 +314,7 @@ void KANALANZEIGE (void)
   {
     xpicpointer=&xpicture2[0];
     ypicpointer=&ypicture2[0];
-	BILD();
+	BILD(ypicpointer,xpicpointer);
   }
 
 }
@@ -337,7 +346,7 @@ ANIMATION();
 
 //********************************************************************************//
 
-void main (void)
+int main (void)
 {
 
 INIT();
