@@ -2,8 +2,11 @@
 void LDAC (unsigned char xDaten, unsigned char yDaten)
 
 {
-	printf("%d %d;",xDaten,yDaten);
+
+#ifdef __x86_64
+	printf("%d %d ;",xDaten,yDaten);
 	fflush(stdout);
+#endif
 // x-daten in DAC laden
   PORTAbits.RA4=1;		//  Channnel A 
   PORTAbits.RA5=0;		//  WR=0

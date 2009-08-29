@@ -32,9 +32,9 @@
 
 void INIT(void) {
 
-#pragma udata bank1=0x100
+//#pragma udata bank1=0x100
 	static unsigned char yarray[255];
-#pragma udata bank2=0x200
+//#pragma udata bank2=0x200
 	static unsigned char xarray[255];
 
 	ADCON1 = 0b00111111;

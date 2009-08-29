@@ -1,0 +1,4 @@
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\TubeShow.c 15 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\TubeShow.c 16 : type qualifier mismatch in assignment
+Error[1105] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\TubeShow.c 17 : symbol 'EXIT_SUCCESS' has not been defined
+Warning[2065] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\TubeShow.c 17 : static function 'main' never referenced
