@@ -21,7 +21,10 @@ for (i=0; i<=255; ++i)
     yArray++;
     xArray++;
   }
-
+#ifdef __x86_64
+printf("\n");
+usleep(10000);
+#endif /*__x86_64*/
 
 
 }

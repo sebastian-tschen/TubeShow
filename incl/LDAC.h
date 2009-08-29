@@ -1,8 +1,8 @@
 
-void LDAC (char xDaten, char yDaten)
+void LDAC (unsigned char xDaten, unsigned char yDaten)
 
 {
-	printf("%d %d ;",xDaten,yDaten);
+	printf("%d %d;",xDaten,yDaten);
 	fflush(stdout);
 // x-daten in DAC laden
   PORTAbits.RA4=1;		//  Channnel A 
