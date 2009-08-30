@@ -1,29 +1,29 @@
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 117 : suspicious pointer conversion
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 117 : suspicious pointer conversion
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 157 : suspicious pointer conversion
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 157 : suspicious pointer conversion
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 189 : suspicious pointer conversion
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 189 : suspicious pointer conversion
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 222 : suspicious pointer conversion
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 222 : suspicious pointer conversion
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 280 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 281 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 283 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 284 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 286 : type qualifier mismatch in assignment
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 110 : suspicious pointer conversion
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 110 : suspicious pointer conversion
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 145 : suspicious pointer conversion
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 145 : suspicious pointer conversion
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 171 : suspicious pointer conversion
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 171 : suspicious pointer conversion
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 204 : suspicious pointer conversion
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 204 : suspicious pointer conversion
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 257 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 258 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 260 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 261 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 263 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 264 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 266 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 267 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 269 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 270 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 272 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 273 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 275 : type qualifier mismatch in assignment
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 276 : type qualifier mismatch in assignment
 Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 287 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 289 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 290 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 292 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 293 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 295 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 296 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 298 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 299 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 315 : type qualifier mismatch in assignment
-Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 316 : type qualifier mismatch in assignment
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 317 : suspicious pointer conversion
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 317 : suspicious pointer conversion
-Warning[2103] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 349 : default startup code expects main function declared as 'void main (void)'
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 354 : suspicious pointer conversion
-Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 354 : suspicious pointer conversion
+Warning[2066] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 288 : type qualifier mismatch in assignment
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 289 : suspicious pointer conversion
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 289 : suspicious pointer conversion
+Warning[2103] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 320 : default startup code expects main function declared as 'void main (void)'
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 324 : suspicious pointer conversion
+Warning[2054] C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\src\main.c 324 : suspicious pointer conversion

@@ -8,9 +8,9 @@ dir_src=
 dir_bin=
 dir_tmp=
 dir_sin=
-dir_inc=C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\incl
-dir_lib=
-dir_lkr=C:\MCC18\lib
+dir_inc=C:\MCC18\h;C:\Dokumente und Einstellungen\blablubb\Eigene Dateien\Projects\TubeShow\incl
+dir_lib=C:\MCC18\lib
+dir_lkr=C:\MCC18\bin\LKR;C:\MCC18\lib
 [CAT_FILTERS]
 filter_src=*.asm;*.c
 filter_inc=*.h;*.inc
@@ -50,6 +50,8 @@ file_022=.
 file_023=.
 file_024=.
 file_025=.
+file_026=.
+file_027=.
 [GENERATED_FILES]
 file_000=no
 file_001=no
@@ -77,6 +79,8 @@ file_022=no
 file_023=no
 file_024=no
 file_025=no
+file_026=no
+file_027=no
 [OTHER_FILES]
 file_000=no
 file_001=no
@@ -104,6 +108,8 @@ file_022=no
 file_023=no
 file_024=no
 file_025=no
+file_026=no
+file_027=no
 [FILE_INFO]
 file_000=src\CHARAPPEND.c
 file_001=src\charlibrary.c
@@ -131,6 +137,8 @@ file_022=incl\p18f4520.h
 file_023=incl\picturelibrary.h
 file_024=incl\textlib.h
 file_025=incl\vardef.h
+file_026=C:\MCC18\lib\p18f4520.lib
+file_027=C:\MCC18\bin\LKR\18f4520_g.lkr
 [SUITE_INFO]
 suite_guid={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
 suite_state=
