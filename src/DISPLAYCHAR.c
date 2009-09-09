@@ -21,10 +21,10 @@ for (i=0; i<=255; ++i)
     yArray++;
     xArray++;
   }
-#ifdef __x86_64
+#ifdef __is_PC
 printf("\n");
 usleep(10000);
-#endif /*__x86_64*/
+#endif /*__is_PC*/
 
 
 }

@@ -1,9 +1,7 @@
 
-void LDAC (unsigned char xDaten, unsigned char yDaten)
+void LDAC (unsigned char xDaten, unsigned char yDaten){
 
-{
-
-#ifdef __x86_64
+#ifdef __is_PC
 	printf("%d %d ;",xDaten,yDaten);
 	fflush(stdout);
 #endif

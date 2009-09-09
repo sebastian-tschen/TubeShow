@@ -16,11 +16,11 @@ static rom far char *ypicpointer;
 static rom far char *textpointer;
 #endif /* __dingens */
 
-#ifdef __x86_64
+#ifdef __is_PC
 static unsigned char *xpicpointer;
 static unsigned char *ypicpointer;
 static unsigned char *textpointer;
-#endif /* __x86_64 */
+#endif /* __is_PC */
 
 static unsigned char picscale;
 static unsigned char xpicoffset;

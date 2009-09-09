@@ -4,11 +4,11 @@
 #include <p18f4520.h>
 #endif /* __dingens */
 
-#ifdef __x86_64
+#ifdef __is_PC
 #include <myp18f4520.h>
 #include <stdio.h>
 #include <stdlib.h>
-#endif /*__x86_64*/
+#endif /*__is_PC*/
 
 #include <main.h>
 
@@ -194,7 +194,7 @@ void ANIBILD(void) {
 	}
 
 	for (k = 0; k <= anitime; ++k) {
-#ifdef __x86_64
+#ifdef __is_PC
 		if (1)
 #endif
 #ifdef __dingens
@@ -246,7 +246,7 @@ void OSCI(void) {
 void ANIMATION(void) {
 
 	anitime = 9;
-#ifdef __x86_64
+#ifdef __is_PC
 	while (1)
 #endif
 #ifdef __dingens
@@ -323,7 +323,7 @@ int main(void) {
 	//LAUFSCHRIFT();
 	displayPicture(&xpicture2, &ypicture2);
 	while (1) {
-#ifdef __x86_64
+#ifdef __is_PC
 		istwert = 40;
 #endif
 #ifdef __dingens

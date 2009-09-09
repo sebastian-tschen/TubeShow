@@ -10,9 +10,9 @@
 #include <p18f4520.h>
 #endif /* __dingens */
 
-#ifdef __x86_64
+#ifdef __is_PC
 #include <myp18f4520.h>
-#endif /*__x86_64*/
+#endif /*__is_PC*/
 
 
 void CHARSCALE (void)

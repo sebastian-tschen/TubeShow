@@ -129,7 +129,7 @@ rom const char  xzklein[15];
 rom const char  yzklein[15];
 #endif /* __dingens */
 
-#ifdef __x86_64
+#ifdef __is_PC
 char  x0klein[25];
 char  y0klein[25];
 char  x1klein[15];
@@ -259,4 +259,4 @@ char  yz[21];
 char  xzklein[15];
 char  yzklein[15];
 
-#endif /*__x86_64 */
+#endif /*__is_PC */
