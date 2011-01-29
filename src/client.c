@@ -2,12 +2,14 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <stdio.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h> 
 
 int sockfd;
+char buffer[3];
 
 void error(const char *msg) {
 	perror(msg);
@@ -39,60 +41,36 @@ int client_init(int portno, char *server_string) {
 	return 0;
 }
 
-
-int client_send_EOC(void){
+int client_send_EOC(void) {
 
 	int n;
-	char eoc[3];
 
-	eoc[0]='e';
-	eoc[0]='o';
-	eoc[0]='c';
-	n = write(sockfd, eoc, strlen(eoc));
-		if (n < 0) {
-			error("ERROR writing to socket");
-		}
-		bzero(eoc,1);
-		n = read(sockfd, eoc, 3);
-		if (n < 0) {
-			error("ERROR reading from socket");
-			return -1;
-		}
-		if (eoc[0] != 'k'){
-			error("ERROR wrong ACC");
-			return -2;
-		}
+	buffer[0] = 'e';
+	buffer[1] = 'o';
+	buffer[2] = 'c';
+	n = write(sockfd, buffer, 3);
+	if (n < 0) {
+		error("ERROR writing to socket");
+	}
 
-		return 0;
+	return 0;
 }
 int client_send(char xD, char yD) {
 
-	char buffer[3];
 	int n;
 	buffer[0] = xD;
 	buffer[1] = yD;
 	buffer[2] = ';';
-	n = write(sockfd, buffer, strlen(buffer));
+	n = write(sockfd, buffer, 3);
 	if (n < 0) {
 		error("ERROR writing to socket");
 	}
-	bzero(buffer, 3);
-	n = read(sockfd, buffer, 3);
-	if (n < 0) {
-		error("ERROR reading from socket");
-		return -1;
-	}
-	if (buffer[0] != 'o'){
-		error("WRONG ACC");
-		return -2;
-	}
-	//
 	return 0;
 
 }
 
 void client_close(void) {
 
-	fprintf(stdout,"closing socket");
+	fprintf(stdout, "closing socket");
 	close(sockfd);
 }
