@@ -8,6 +8,7 @@
 #include <myp18f4520.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <client.h>
 #endif /*__is_PC*/
 
 #include <main.h>
@@ -320,6 +321,7 @@ void INTRO(void) {
 int main(void) {
 
 	INIT();
+	client_init(12345,"localhost");
 	//LAUFSCHRIFT();
 	displayPicture(&xpicture2, &ypicture2);
 	while (1) {

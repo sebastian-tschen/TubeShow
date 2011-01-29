@@ -22,8 +22,9 @@ for (i=0; i<=255; ++i)
     xArray++;
   }
 #ifdef __is_PC
-printf("\n");
-usleep(10000);
+//printf("\n");
+//usleep(10000);
+client_send_EOC();
 #endif /*__is_PC*/
 
 
