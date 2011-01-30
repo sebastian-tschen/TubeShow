@@ -49,7 +49,7 @@ int client_send_EOC(void) {
 	buffer[1] = 'o';
 	buffer[2] = 'c';
 	n = write(sockfd, buffer, 3);
-	if (n < 0) {
+	if (n != 3) {
 		error("ERROR writing to socket");
 	}
 
@@ -62,7 +62,7 @@ int client_send(char xD, char yD) {
 	buffer[1] = yD;
 	buffer[2] = ';';
 	n = write(sockfd, buffer, 3);
-	if (n < 0) {
+	if (n != 3) {
 		error("ERROR writing to socket");
 	}
 	return 0;
