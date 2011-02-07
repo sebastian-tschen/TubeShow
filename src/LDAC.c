@@ -1,13 +1,19 @@
 
 #include <myp18f4520.h>
 #include <stdio.h>
+#include <vardef.h>
+#include <client.h>
 void LDAC (unsigned char xDaten, unsigned char yDaten){
 
 #ifdef __is_PC
 	//printf("%d %d ;",xDaten,yDaten);
 	//fflush(stdout);
-
-	client_send(xDaten,yDaten);
+	char buffer[3];
+	buffer[0] = xDaten;
+		buffer[1] = yDaten;
+		buffer[2] = ';';
+//		printf("%d\n",displaySocket);
+	client_send(displaySocket,buffer);
 
 #endif
 // x-daten in DAC laden

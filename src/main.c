@@ -2,6 +2,7 @@
 
 #ifdef __dingens
 #include <p18f4520.h>
+
 #endif /* __dingens */
 
 #ifdef __is_PC
@@ -28,7 +29,9 @@
 #include <displayPicture.h>
 //#include <math.h>
 
-
+int displaySocket;
+int delaySocket;
+int controlSocket;
 //********************************************************************************//
 
 void INIT(void) {
@@ -321,7 +324,9 @@ void INTRO(void) {
 int main(void) {
 
 	INIT();
-	client_init(12345,"localhost");
+	displaySocket=client_init(12345,"localhost");
+	printf("%d\n",displaySocket);
+	fflush(stdout);
 	//LAUFSCHRIFT();
 	displayPicture(&xpicture2, &ypicture2);
 	while (1) {

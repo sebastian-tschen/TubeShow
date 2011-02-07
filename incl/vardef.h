@@ -20,6 +20,10 @@ static rom far char *textpointer;
 static unsigned char *xpicpointer;
 static unsigned char *ypicpointer;
 static unsigned char *textpointer;
+
+extern int displaySocket;
+extern int delaySocket;
+extern int controlSocket;
 #endif /* __is_PC */
 
 static unsigned char picscale;

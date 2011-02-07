@@ -8,19 +8,19 @@
 #include <netinet/in.h>
 #include <netdb.h> 
 
-int sockfd;
-char buffer[3];
+//int sockfd;
+//char buffer[3];
 
 void error(const char *msg) {
 	perror(msg);
 	exit(0);
 }
 
-int client_init(int portno, char *server_string) {
+int client_init(int portno,char *server_string) {
 	struct sockaddr_in serv_addr;
 	struct hostent *server;
 
-	sockfd = socket(AF_INET, SOCK_STREAM, 0);
+	int sockfd = socket(AF_INET, SOCK_STREAM, 0);
 	if (sockfd < 0)
 		error("ERROR opening socket");
 	server = gethostbyname(server_string);
@@ -37,31 +37,15 @@ int client_init(int portno, char *server_string) {
 		error("ERROR connecting");
 		return -2;
 	}
-	fprintf(stdout, "Connection established");
-	return 0;
+	fprintf(stdout, "Connection established\n");
+	return sockfd;
 }
 
-int client_send_EOC(void) {
+int client_send(int sockfd, char buff[]) {
 
 	int n;
 
-	buffer[0] = 'e';
-	buffer[1] = 'o';
-	buffer[2] = 'c';
-	n = write(sockfd, buffer, 3);
-	if (n != 3) {
-		error("ERROR writing to socket");
-	}
-
-	return 0;
-}
-int client_send(char xD, char yD) {
-
-	int n;
-	buffer[0] = xD;
-	buffer[1] = yD;
-	buffer[2] = ';';
-	n = write(sockfd, buffer, 3);
+	n = write(sockfd, buff, 3);
 	if (n != 3) {
 		error("ERROR writing to socket");
 	}
@@ -69,7 +53,7 @@ int client_send(char xD, char yD) {
 
 }
 
-void client_close(void) {
+void client_close(int sockfd) {
 
 	fprintf(stdout, "closing socket");
 	close(sockfd);
