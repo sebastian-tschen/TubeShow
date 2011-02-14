@@ -17,4 +17,6 @@ int client_send_EOC(void);
 int client_send(int sockfd,char buff[]);
 int client_init(int portno, char *server_string);
 void client_close(int sockfd);
+int client_read(int sockfd, char buff[]);
+int setNonblocking(int fd);
 

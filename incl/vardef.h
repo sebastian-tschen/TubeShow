@@ -5,16 +5,11 @@ static unsigned char ydaten=0;
 static unsigned char kanalwert;
 static unsigned char moduswert;
 static unsigned char triggerport=1;
-static unsigned char vergleichswert;
+extern unsigned char vergleichswert;
 static unsigned int oscitemp;
 static unsigned char xcarry;
 static unsigned char ycarry;
 static unsigned char counter;
-#ifdef __dingens
-static rom far char *xpicpointer;
-static rom far char *ypicpointer;
-static rom far char *textpointer;
-#endif /* __dingens */
 
 #ifdef __is_PC
 static unsigned char *xpicpointer;
@@ -24,6 +19,7 @@ static unsigned char *textpointer;
 extern int displaySocket;
 extern int delaySocket;
 extern int controlSocket;
+extern int commandSocket;;
 #endif /* __is_PC */
 
 static unsigned char picscale;
